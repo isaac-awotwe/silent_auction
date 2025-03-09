@@ -10,8 +10,8 @@ keep_bidding = True
 while keep_bidding:
     # Ask the user for input
     name = input("What is your name?: ")
-    bid = input("What is your bid?: $")
-    auction[name] = float(bid)
+    bid = float(input("What is your bid?: $"))
+    auction[name] = bid
     other_bidders = input("Are there any other bidders? Type 'yes' or 'no'\n")
     if other_bidders == 'yes':
         print("\n" * 100)
